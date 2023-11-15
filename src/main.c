@@ -384,9 +384,11 @@ void saveArchiveToTxt(double *archive, int size, const char *filename){
 void saveArchive(){
 
     saveArchiveToTxt(q1_desired.y, ARRAY_SIZE, "../report/qd1.txt");
+    saveArchiveToTxt(dq1_desired.y, ARRAY_SIZE, "../report/dqd1.txt");
     saveArchiveToTxt(archive.q1_archive, ARRAY_SIZE, "../report/q1.txt");
     saveArchiveToTxt(archive.dq1_archive, ARRAY_SIZE, "../report/dq1.txt");
     saveArchiveToTxt(q2_desired.y, ARRAY_SIZE, "../report/qd2.txt");
+    saveArchiveToTxt(dq2_desired.y, ARRAY_SIZE, "../report/dqd2.txt");
     saveArchiveToTxt(archive.q2_archive, ARRAY_SIZE, "../report/q2.txt");
     saveArchiveToTxt(archive.dq2_archive, ARRAY_SIZE, "../report/dq2.txt");
     saveArchiveToTxt(archive.error1_archive, ARRAY_SIZE, "../report/error1.txt");
